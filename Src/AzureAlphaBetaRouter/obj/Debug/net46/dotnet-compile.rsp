@@ -1,0 +1,31 @@
+--temp-output:E:\Dev\RouteMe\1.2 webTier\AzureAlphaBetaRouter\obj\Debug\net46\
+--out:E:\Dev\RouteMe\1.2 webTier\AzureAlphaBetaRouter\bin\Debug\net46\AzureAlphaBetaRouter.dll
+--define:DEBUG
+--define:TRACE
+--define:NET46
+--suppress-warning:CS1701
+--suppress-warning:CS1702
+--suppress-warning:CS1705
+--optimize:False
+--output-name:AzureAlphaBetaRouter
+--file-version:1.0.0.0
+--version:1.0.0.0
+--informational-version:1.0.0
+--target-framework:.NETFramework,Version=v4.6
+--reference:C:\Users\Richard\.nuget\packages\Microsoft.ApplicationInsights\2.2.0\lib\net46\Microsoft.ApplicationInsights.dll
+--reference:C:\Users\Richard\.nuget\packages\Newtonsoft.Json\9.0.1\lib\net45\Newtonsoft.Json.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\mscorlib.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\System.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\System.Core.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\Microsoft.CSharp.dll
+E:\Dev\RouteMe\1.2 webTier\AzureAlphaBetaRouter\Class1.cs
+E:\Dev\RouteMe\1.2 webTier\AzureAlphaBetaRouter\Properties\AssemblyInfo.cs
+E:\Dev\RouteMe\1.2 webTier\AzureAlphaBetaRouter\Routing\AzureSlotRouter.cs
+E:\Dev\RouteMe\1.2 webTier\AzureAlphaBetaRouter\Routing\AzureAnalyticsApiReader\ApplicationInsightsApiResponse.cs
+E:\Dev\RouteMe\1.2 webTier\AzureAlphaBetaRouter\Routing\AzureAnalyticsApiReader\ApplicationInsightsRestClient.cs
+E:\Dev\RouteMe\1.2 webTier\AzureAlphaBetaRouter\Routing\Models\AzureWebsiteRoutingEntites.cs
+E:\Dev\RouteMe\1.2 webTier\AzureAlphaBetaRouter\Routing\Models\RoutingStatus.cs
+E:\Dev\RouteMe\1.2 webTier\AzureAlphaBetaRouter\Strategies\RouterVerificationStrategy.cs
+E:\Dev\RouteMe\1.2 webTier\AzureAlphaBetaRouter\Strategies\WebsiteExceptionsStrategy.cs
+E:\Dev\RouteMe\1.2 webTier\AzureAlphaBetaRouter\Strategies\Common\DeploymentVerificationStrategy.cs
+E:\Dev\RouteMe\1.2 webTier\AzureAlphaBetaRouter\Strategies\Common\VerficationResult.cs

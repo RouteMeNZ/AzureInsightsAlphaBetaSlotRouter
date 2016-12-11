@@ -1,0 +1,39 @@
+﻿-d:DEBUG
+-d:TRACE
+-d:NET462
+-nowarn:CS1701
+-nowarn:CS1702
+-nowarn:CS1705
+-t:library
+-debug:full
+-nostdlib
+-nologo
+"E:\Dev\RouteMe\1.2 webTier\AzureAlphaBetaRouter\obj\Debug\net462\dotnet-compile.assemblyinfo.cs"
+-out:"E:\Dev\RouteMe\1.2 webTier\AzureAlphaBetaRouter\bin\Debug\net462\AzureAlphaBetaRouter.dll"
+-r:"C:\Users\Richard\.nuget\packages\Microsoft.ApplicationInsights\2.2.0\lib\net46\Microsoft.ApplicationInsights.dll"
+-r:"C:\Users\Richard\.nuget\packages\Newtonsoft.Json\9.0.1\lib\net45\Newtonsoft.Json.dll"
+-r:"C:\Users\Richard\.nuget\packages\System.Net.Http\4.3.0\ref\net46\System.Net.Http.dll"
+-r:"C:\Users\Richard\.nuget\packages\System.Runtime\4.1.0\ref\net462\System.Runtime.dll"
+-r:"C:\Users\Richard\.nuget\packages\System.Runtime.Serialization.Primitives\4.1.1\ref\net46\System.Runtime.Serialization.Primitives.dll"
+-r:"C:\Users\Richard\.nuget\packages\System.Security.Cryptography.Algorithms\4.3.0\ref\net461\System.Security.Cryptography.Algorithms.dll"
+-r:"C:\Users\Richard\.nuget\packages\System.Security.Cryptography.Encoding\4.3.0\ref\net46\System.Security.Cryptography.Encoding.dll"
+-r:"C:\Users\Richard\.nuget\packages\System.Security.Cryptography.Primitives\4.3.0\ref\net46\System.Security.Cryptography.Primitives.dll"
+-r:"C:\Users\Richard\.nuget\packages\System.Security.Cryptography.X509Certificates\4.3.0\ref\net461\System.Security.Cryptography.X509Certificates.dll"
+-r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\Facades\System.Threading.Tasks.dll"
+-r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\mscorlib.dll"
+-r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\System.dll"
+-r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\System.Core.dll"
+-r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\Microsoft.CSharp.dll"
+-r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\System.ComponentModel.Composition.dll"
+-r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\System.Runtime.Serialization.dll"
+"E:\Dev\RouteMe\1.2 webTier\AzureAlphaBetaRouter\Class1.cs"
+"E:\Dev\RouteMe\1.2 webTier\AzureAlphaBetaRouter\Properties\AssemblyInfo.cs"
+"E:\Dev\RouteMe\1.2 webTier\AzureAlphaBetaRouter\Routing\AzureSlotRouter.cs"
+"E:\Dev\RouteMe\1.2 webTier\AzureAlphaBetaRouter\Routing\AzureAnalyticsApiReader\ApplicationInsightsApiResponse.cs"
+"E:\Dev\RouteMe\1.2 webTier\AzureAlphaBetaRouter\Routing\AzureAnalyticsApiReader\ApplicationInsightsRestClient.cs"
+"E:\Dev\RouteMe\1.2 webTier\AzureAlphaBetaRouter\Routing\Models\AzureWebsiteRoutingEntites.cs"
+"E:\Dev\RouteMe\1.2 webTier\AzureAlphaBetaRouter\Routing\Models\RoutingStatus.cs"
+"E:\Dev\RouteMe\1.2 webTier\AzureAlphaBetaRouter\Strategies\RouterVerificationStrategy.cs"
+"E:\Dev\RouteMe\1.2 webTier\AzureAlphaBetaRouter\Strategies\WebsiteExceptionsStrategy.cs"
+"E:\Dev\RouteMe\1.2 webTier\AzureAlphaBetaRouter\Strategies\Common\DeploymentVerificationStrategy.cs"
+"E:\Dev\RouteMe\1.2 webTier\AzureAlphaBetaRouter\Strategies\Common\VerficationResult.cs"

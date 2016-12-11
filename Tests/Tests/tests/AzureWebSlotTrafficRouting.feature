@@ -19,7 +19,7 @@ Then I expect to see the the percentage of traffic go down to <Staging Routing P
 
 Examples: Technical issues
 	 | Problem            | Azure API | Azure API Metric                           | Description                         | Staging Routing Percentage |
-	 | Router issues      | metrics   | availabilityResults/availabilityPercentage | As determined load testing on Azure | 0%                         |
+	 | Router issues      | metrics   | availabilityResults/availabilityPercentage | As determined load testing on Azure | 5%                         |
 	 | Javascript errors  | metrics   | exceptions/browser                         | Application insights                | 0%                         |
 	 | Server side errors | metrics   | exceptions/server                          | Application insights                | 0%                         |
 	 | Latency regression | metrics   | browserTimings/receiveDuration             | Must be less than 20% regression    | 5%                         |

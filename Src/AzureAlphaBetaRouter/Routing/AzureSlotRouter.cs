@@ -44,7 +44,7 @@ namespace AzureAlphaBetaRouter.Routing
             return new AzureWebsiteRoutingEntites.ChangeDirectionResult
             {
                 //Take us down towards zero but not lower than zero as it makes no sense to Azure.
-                RoutingPercentage = Math.Max((int)currentBalancePercentage - 10, 0)
+                RoutingPercentage = Math.Max((int)(currentBalancePercentage - stepUpPercentage), 0)
             };
 
             // Use either Step or RoutingPercentage. If both returned RoutingPercentage takes precedence

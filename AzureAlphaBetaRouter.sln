@@ -9,7 +9,9 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Tests", "Tests\Tests\Tests.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Artifacts", "Artifacts", "{AC04F378-C5A5-4BBB-9C6F-EC3299E45A38}"
 	ProjectSection(SolutionItems) = preProject
+		build.bat = build.bat
 		LICENSE = LICENSE
+		Package.nuspec = Package.nuspec
 		README.md = README.md
 	EndProjectSection
 EndProject

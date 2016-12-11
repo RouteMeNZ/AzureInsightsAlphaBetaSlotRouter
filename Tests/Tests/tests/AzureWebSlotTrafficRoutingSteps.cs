@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using AzureAlphaBetaRouter.Routing;
 using AzureAlphaBetaRouter.Routing.Models;
 using AzureAlphaBetaRouter.Strategies;
 using AzureAlphaBetaRouter.Strategies.Common;
-using Moq;
 using NUnit.Framework;
 using TechTalk.SpecFlow;
 using Tests.Mocks;
@@ -32,38 +30,39 @@ namespace Tests.tests
                     problemType = new List<DeploymentVerificationStrategy>();
                     break;
                 case "Router issues":
-                    problemType = new List<DeploymentVerificationStrategy> { new RouterVerificationStrategy() };
+                    problemType = new List<DeploymentVerificationStrategy> { MocksFactory.GetRouterVerificationStrategy() };
                     break;
                 case "Javascript errors":
                 case "Server side errors":
-                    var websiteStrategyWithProblemFound = new Mock<WebsiteExceptionsStrategy>();
-                    websiteStrategyWithProblemFound.Setup(x => x.VerifyDeploymentResult(null)).ReturnsAsync(false);
-                    websiteStrategyWithProblemFound.Setup(x => x.VerificationPassed).Returns(false);
-                    problemType = new List<DeploymentVerificationStrategy> { websiteStrategyWithProblemFound.Object };
+                    problemType = new List<DeploymentVerificationStrategy> { MocksFactory.GetWebsiteExceptionsStrategy() };
                     break;
                 case "Latency regression":
-                    problemType = new List<DeploymentVerificationStrategy> {  };
+                    problemType = new List<DeploymentVerificationStrategy> { MocksFactory.GetLatencyStrategy() };
                     break;
                 case "Customer conversion regression":
-                    problemType = new List<DeploymentVerificationStrategy> {  };
+                    problemType = new List<DeploymentVerificationStrategy> { MocksFactory.CustomerConversionRegressionStrategy() };
                     break;
                 case "Customer bounce rate":
-                    problemType = new List<DeploymentVerificationStrategy> {  };
+                    problemType = new List<DeploymentVerificationStrategy> { MocksFactory.CustomerBounceRateStrategy() };
                     break;
                 case "Customer average time spent on page":
-                    problemType = new List<DeploymentVerificationStrategy> {  };
+                    problemType = new List<DeploymentVerificationStrategy> { MocksFactory.CustomerAverageTimeOnPageStrategy()  };
                     break;
                 case "Server side errors & Latency regression":
-                    problemType = new List<DeploymentVerificationStrategy> { new WebsiteExceptionsStrategy(),
-                                                                             null};
+                    problemType = new List<DeploymentVerificationStrategy> { MocksFactory.GetWebsiteExceptionsStrategy(),
+                                                                             MocksFactory.GetLatencyStrategy()};
+                    break;
+                case "Customer bounce rate & Customer average time spent on page":
+                    problemType = new List<DeploymentVerificationStrategy> { MocksFactory.CustomerBounceRateStrategy(),
+                                                                             MocksFactory.CustomerAverageTimeOnPageStrategy() };
                     break;
                 case "All issue types":
-                    problemType = new List<DeploymentVerificationStrategy> { new RouterVerificationStrategy() ,
-                                                                             new WebsiteExceptionsStrategy(),
-                                                                             null,
-                                                                             null,
-                                                                             null,
-                                                                             null};
+                    problemType = new List<DeploymentVerificationStrategy> { MocksFactory.GetRouterVerificationStrategy(),
+                                                                             MocksFactory.GetWebsiteExceptionsStrategy(),
+                                                                             MocksFactory.GetLatencyStrategy(),
+                                                                             MocksFactory.CustomerConversionRegressionStrategy(),
+                                                                             MocksFactory.CustomerBounceRateStrategy(),
+                                                                             MocksFactory.CustomerAverageTimeOnPageStrategy()};
                     break;
                 default:
                     throw new NotSupportedException("Use a supported case");

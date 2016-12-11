@@ -70,6 +70,7 @@
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\System.ComponentModel.Composition.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\System.Runtime.Serialization.dll
 C:\Users\Richard\Documents\GitHub\AzureInsightsAlphaBetaSlotRouter\Tests\Tests\Mocks\ApplicationInsightsRestClientMock.cs
+C:\Users\Richard\Documents\GitHub\AzureInsightsAlphaBetaSlotRouter\Tests\Tests\Mocks\MocksFactory.cs
 C:\Users\Richard\Documents\GitHub\AzureInsightsAlphaBetaSlotRouter\Tests\Tests\Properties\AssemblyInfo.cs
 C:\Users\Richard\Documents\GitHub\AzureInsightsAlphaBetaSlotRouter\Tests\Tests\tests\AzureWebSlotTrafficRouting.feature.cs
 C:\Users\Richard\Documents\GitHub\AzureInsightsAlphaBetaSlotRouter\Tests\Tests\tests\AzureWebSlotTrafficRoutingSteps.cs

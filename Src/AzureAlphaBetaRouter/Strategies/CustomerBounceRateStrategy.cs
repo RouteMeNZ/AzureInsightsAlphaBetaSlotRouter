@@ -5,12 +5,9 @@ using AzureAlphaBetaRouter.Strategies.Common;
 
 namespace AzureAlphaBetaRouter.Strategies
 {
-    /// <summary>
-    /// Details of the API used in this class are here: https://msdn.microsoft.com/en-us/library/azure/dn931965.aspx
-    /// </summary>
-    public class RouterVerificationStrategy : DeploymentVerificationStrategy
+    public class CustomerBounceRateStrategy : DeploymentVerificationStrategy
     {
-        public RouterVerificationStrategy()
+        public CustomerBounceRateStrategy()
         {
             TakesInstantEffect = false;
         }
@@ -20,7 +17,7 @@ namespace AzureAlphaBetaRouter.Strategies
             var webTestName = "Production up-time test";
             var apiVersion = "1.1";
             var resourceGroupName = "RouteMe";
-            await restClient.FetchRouterTests(resourceGroupName, webTestName, apiVersion);
+            await restClient.FetchCustomerBounceRateResult(resourceGroupName, webTestName, apiVersion);
 
             //This is started but not finished. Need to integrate to finish the rest.
             throw new NotImplementedException();

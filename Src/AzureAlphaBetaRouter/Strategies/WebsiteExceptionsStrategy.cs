@@ -14,7 +14,7 @@ namespace AzureAlphaBetaRouter.Strategies
 
         public override async Task<bool> VerifyDeploymentResult(ApplicationInsightsRestClient restClient)
         {
-            var result = await restClient.FetchData(ApplicationInsightsRestClient.ApplicationInsightsMetricRequestType.metrics, "P5D");
+            var result = await restClient.FetchWebExceptionsResult(ApplicationInsightsRestClient.ApplicationInsightsMetricRequestType.metrics, "P5D");
 
             var numberOfExceptionsFoundForWebsite = result?.value?.FailedRequests?.sum;
 

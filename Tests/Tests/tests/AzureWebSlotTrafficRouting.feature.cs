@@ -90,7 +90,7 @@ testRunner.Then("I expect to see the percentage of traffic go up to 15%", ((stri
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("GetRoutingDirection - Routing to alpha decreasing")]
         [NUnit.Framework.CategoryAttribute("validation")]
-        [NUnit.Framework.TestCaseAttribute("Router issues", "metrics", "availabilityResults/availabilityPercentage", "As determined load testing on Azure", "0%", new string[0])]
+        [NUnit.Framework.TestCaseAttribute("Router issues", "metrics", "availabilityResults/availabilityPercentage", "As determined load testing on Azure", "5%", new string[0])]
         [NUnit.Framework.TestCaseAttribute("Javascript errors", "metrics", "exceptions/browser", "Application insights", "0%", new string[0])]
         [NUnit.Framework.TestCaseAttribute("Server side errors", "metrics", "exceptions/server", "Application insights", "0%", new string[0])]
         [NUnit.Framework.TestCaseAttribute("Latency regression", "metrics", "browserTimings/receiveDuration", "Must be less than 20% regression", "5%", new string[0])]

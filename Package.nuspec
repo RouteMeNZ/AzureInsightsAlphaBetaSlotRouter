@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>RouteMe.Co.Nz.AzureAlphaBetaRouter</id>
+    <version>0.0.1</version>
+    <authors>RouteMe.co.nz, Richard Wilburn</authors>
+    <owners>RouteMe.co.nz, Richard Wilburn</owners>
+    <licenseUrl>https://github.com/RouteMeNZ/AzureInsightsAlphaBetaSlotRouter/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/RouteMeNZ/AzureInsightsAlphaBetaSlotRouter</projectUrl>
+    <!--<iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A package to help Azure application insights users perform alpha beta routing between their website slots. This will work conceptually for marketing and devops type considerations</description>
+    <releaseNotes>Pre 1.0 release, so the API might be refactored a little over releases yet.</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>Alpha Beta Application Insights Azure Analytics Continuous Delivery</tags>
+    <dependencies>
+      <dependency id="Microsoft.ApplicationInsights" version="2.2.0" />
+      <dependency id="Newtonsoft.Json" version="9.0.1" />
+      <dependency id="System.Net.Http" version="4.3.0" />
+      <dependency id="System.Runtime" version="4.1.0" />
+      <dependency id="System.Runtime.Serialization.Primitives" version="4.1.1" />
+      <dependency id="System.Threading.Tasks" version="4.3.0" />
+    </dependencies>
+  </metadata>
+</package>

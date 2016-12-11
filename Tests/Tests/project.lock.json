@@ -3,6 +3,15 @@
   "version": 2,
   "targets": {
     ".NETFramework,Version=v4.6.2": {
+      "Castle.Core/3.3.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Castle.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Castle.Core.dll": {}
+        }
+      },
       "dotnet-test-nunit/3.4.0-beta-2": {
         "type": "package",
         "dependencies": {
@@ -130,6 +139,18 @@
         },
         "runtime": {
           "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Moq/4.5.29": {
+        "type": "package",
+        "dependencies": {
+          "Castle.Core": "3.3.3"
+        },
+        "compile": {
+          "lib/net45/Moq.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Moq.dll": {}
         }
       },
       "Newtonsoft.Json/9.0.1": {
@@ -504,6 +525,30 @@
     }
   },
   "libraries": {
+    "Castle.Core/3.3.3": {
+      "sha512": "tvVrLbHhtAGubUUDbEkH9JlivdlJOTI25u3hlyHpPxuJdTVi/yVQKWCYvGpafGPm7G1ibdWj4brqhtSQkAmN+g==",
+      "type": "package",
+      "path": "Castle.Core/3.3.3",
+      "files": [
+        "ASL - Apache Software Foundation License.txt",
+        "BreakingChanges.txt",
+        "Castle.Core.3.3.3.nupkg.sha512",
+        "Castle.Core.nuspec",
+        "Changes.txt",
+        "License.txt",
+        "lib/net35/Castle.Core.dll",
+        "lib/net35/Castle.Core.xml",
+        "lib/net40-client/Castle.Core.dll",
+        "lib/net40-client/Castle.Core.xml",
+        "lib/net45/Castle.Core.dll",
+        "lib/net45/Castle.Core.xml",
+        "lib/sl4/Castle.Core.dll",
+        "lib/sl4/Castle.Core.xml",
+        "lib/sl5/Castle.Core.dll",
+        "lib/sl5/Castle.Core.xml",
+        "readme.txt"
+      ]
+    },
     "dotnet-test-nunit/3.4.0-beta-2": {
       "sha512": "ImRqxsZMFzn+bM33emu5ZMzIUe8GOHPxdA2NkUIsawWd4YjvcFzdIo5iNuejlY0lw1M+RMwRbpd/cKkhKft52g==",
       "type": "package",
@@ -622,6 +667,17 @@
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
         "runtime.json"
+      ]
+    },
+    "Moq/4.5.29": {
+      "sha512": "iLhUfoKC4n5/gsWYzfP8p8884UJz8lJAZ3SY6RgpWcuN+qAZ5rhEtLzAZeNgeZroNVeIsOnfpctQXkNaC74plw==",
+      "type": "package",
+      "path": "Moq/4.5.29",
+      "files": [
+        "Moq.4.5.29.nupkg.sha512",
+        "Moq.nuspec",
+        "lib/net45/Moq.dll",
+        "lib/net45/Moq.xml"
       ]
     },
     "Newtonsoft.Json/9.0.1": {
@@ -1481,6 +1537,7 @@
   "projectFileDependencyGroups": {
     "": [
       "AzureAlphaBetaRouter",
+      "Moq >= 4.5.29",
       "NUnit >= 3.4.1",
       "SpecFlow >= 2.1.0",
       "dotnet-test-nunit >= 3.4.0-beta-2"

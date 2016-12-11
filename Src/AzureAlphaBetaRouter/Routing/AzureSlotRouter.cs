@@ -9,7 +9,7 @@ namespace AzureAlphaBetaRouter.Routing
 {
     public class AzureSlotRouter
     {
-        public static AzureWebsiteRoutingEntites.ChangeDirectionResult ChangeDirectionResult(ApplicationInsightsRestClient restClient, long currentBalancePercentage, List<DeploymentVerificationStrategy> strategies)
+        public static AzureWebsiteRoutingEntites.ChangeDirectionResult ChangeDirectionResult(ApplicationInsightsRestClient restClient, long currentBalancePercentage, long stepUpPercentage, List<DeploymentVerificationStrategy> strategies)
         {
             foreach (var deploymentVerificationStrategy in strategies)
             {
@@ -25,7 +25,7 @@ namespace AzureAlphaBetaRouter.Routing
             {
                 return new AzureWebsiteRoutingEntites.ChangeDirectionResult
                 {
-                    Step = Math.Min((int)currentBalancePercentage + 10, 100)
+                    RoutingPercentage = Math.Min((int)(currentBalancePercentage + stepUpPercentage), 100)
                 };
             }
 
@@ -44,7 +44,7 @@ namespace AzureAlphaBetaRouter.Routing
             return new AzureWebsiteRoutingEntites.ChangeDirectionResult
             {
                 //Take us down towards zero but not lower than zero as it makes no sense to Azure.
-                Step = Math.Max((int)currentBalancePercentage - 10, 0)
+                RoutingPercentage = Math.Max((int)currentBalancePercentage - 10, 0)
             };
 
             // Use either Step or RoutingPercentage. If both returned RoutingPercentage takes precedence

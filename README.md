@@ -13,6 +13,13 @@ To get started we recommend doing the following:
 * Read through the gherkin syntax in the specflow
 * 
 
+## TODO
+
+* Finish the source code for a few basic scenarios 
+* Get the project to build with CI
+* Get the tests running
+* Get the project published onto Nuget
+
 ## Who uses it currently?
 
 This project is used by www.routeme.co.nz to help deliver RouteMe's code via A/B testing mechanisms. For us A/B testing spans marketing objectives and operational stability. We use Azure application insights for both and thus use the same process for both. You too can use our framework for any A/B testing you want against Application Insights with ease.
